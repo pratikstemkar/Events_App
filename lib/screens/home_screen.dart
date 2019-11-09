@@ -1,3 +1,4 @@
+import 'package:events_app/widgets/date_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -44,6 +45,14 @@ class _HomeScreenState extends State<HomeScreen> {
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(50.0),
               ),
+            ),
+            child: Column(
+              children: <Widget>[
+                SizedBox(
+                  height: 50.0,
+                ),
+                DateWidget(),
+              ],
             ),
           ),
           Expanded(
