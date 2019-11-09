@@ -11,7 +11,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Events',
+          'DSC Events',
           style: TextStyle(
             color: Colors.white,
             fontSize: 20.0,
@@ -22,14 +22,14 @@ class _HomeScreenState extends State<HomeScreen> {
         elevation: 0.0,
         leading: IconButton(
           icon: Icon(Icons.menu),
-          iconSize: 18.0,
+          iconSize: 25.0,
           color: Colors.white,
           onPressed: () {},
         ),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.search),
-            iconSize: 18.0,
+            iconSize: 25.0,
             color: Colors.white,
             onPressed: () {},
           )
@@ -40,9 +40,30 @@ class _HomeScreenState extends State<HomeScreen> {
           Container(
             height: 200.0,
             decoration: BoxDecoration(
-              color: Colors.red,
+              color: Colors.blue,
               borderRadius: BorderRadius.only(
-                bottomRight: Radius.circular(30.0),
+                bottomRight: Radius.circular(50.0),
+              ),
+            ),
+          ),
+          Expanded(
+            child: Container(
+              color: Colors.red,
+              child: Stack(
+                alignment: Alignment.topCenter,
+                children: <Widget>[
+                  Container(
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(50.0),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
