@@ -8,6 +8,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  int _currentTab = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,52 +39,76 @@ class _HomeScreenState extends State<HomeScreen> {
           )
         ],
       ),
-      body: Column(
-        children: <Widget>[
-          Container(
-            height: 200.0,
-            decoration: BoxDecoration(
-              color: Colors.blue,
-              borderRadius: BorderRadius.only(
-                bottomRight: Radius.circular(50.0),
-              ),
-            ),
-            child: Column(
-              children: <Widget>[
-                SizedBox(
-                  height: 50.0,
+      body: SafeArea(
+        child: Column(
+          children: <Widget>[
+            Container(
+              height: 200.0,
+              decoration: BoxDecoration(
+                color: Colors.blue,
+                borderRadius: BorderRadius.only(
+                  bottomRight: Radius.circular(50.0),
                 ),
-                DateWidget(),
-              ],
-            ),
-          ),
-          Expanded(
-            child: Container(
-              child: Stack(
-                alignment: Alignment.topCenter,
+              ),
+              child: Column(
                 children: <Widget>[
-                  Container(
-                    color: Colors.blue,
+                  SizedBox(
+                    height: 50.0,
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(50.0),
-                      ),
-                    ),
-                    child: Column(
-                      children: <Widget>[
-                        SizedBox(
-                          height: 20.0,
-                        ),
-                        EventWidget(),
-                      ],
-                    ),
-                  ),
+                  DateWidget(),
                 ],
               ),
             ),
+            Expanded(
+              child: Container(
+                child: Stack(
+                  alignment: Alignment.topCenter,
+                  children: <Widget>[
+                    Container(
+                      color: Colors.blue,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(50.0),
+                        ),
+                      ),
+                      child: Column(
+                        children: <Widget>[
+                          SizedBox(
+                            height: 20.0,
+                          ),
+                          EventWidget(),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _currentTab,
+        onTap: (int value) {
+          setState(() {
+            _currentTab = value;
+          });
+        },
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.access_alarm),
+            title: SizedBox.shrink(),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_balance),
+            title: SizedBox.shrink(),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add_alert),
+            title: SizedBox.shrink(),
           ),
         ],
       ),
