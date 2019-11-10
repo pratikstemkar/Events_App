@@ -1,3 +1,5 @@
+import 'package:events_app/screens/event_screen.dart';
+import 'package:events_app/models/event_model.dart';
 import 'package:flutter/material.dart';
 
 class EventWidget extends StatefulWidget {
@@ -45,33 +47,59 @@ class _EventWidgetState extends State<EventWidget> {
               scrollDirection: Axis.horizontal,
               itemCount: 4,
               itemBuilder: (BuildContext context, int index) {
-                return Container(
-                  margin: EdgeInsets.all(10.0),
-                  height: 80.0,
-                  width: 120.0,
-                  decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.circular(10.0),
-                      boxShadow: [
-                        BoxShadow(
-                          offset: Offset(2.0, 4.0),
-                          blurRadius: 6.0,
-                          color: Colors.black26,
-                        ),
-                      ]),
-                  child: Stack(
-                    alignment: Alignment.topCenter,
-                    children: <Widget>[
-                      Positioned(
-                        bottom: 10.0,
-                        child: Text(
-                          'Event $index',
-                          style: TextStyle(
-                            color: Colors.white,
+                Event event = events[index];
+                return GestureDetector(
+                  onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => EventScreen(
+                        event: event,
+                      ),
+                    ),
+                  ),
+                  child: Container(
+                    margin: EdgeInsets.all(10.0),
+                    height: 80.0,
+                    width: 120.0,
+                    decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.circular(10.0),
+                        boxShadow: [
+                          BoxShadow(
+                            offset: Offset(2.0, 4.0),
+                            blurRadius: 6.0,
+                            color: Colors.black26,
+                          ),
+                        ]),
+                    child: Stack(
+                      alignment: Alignment.topCenter,
+                      children: <Widget>[
+                        Hero(
+                          tag: events[index].imageUrl,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10.0),
+                            child: Image(
+                              height: 150.0,
+                              width: 150.0,
+                              image: AssetImage(events[index].imageUrl),
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                        Positioned(
+                          left: 10.0,
+                          bottom: 10.0,
+                          child: Text(
+                            'Event $index',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18.0,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 );
               },
