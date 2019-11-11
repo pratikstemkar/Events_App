@@ -18,4 +18,4 @@ UI development in progress.
 ## License :pencil:
 [MIT](https://opensource.org/licenses/MIT)
 
-Made with ❤ by PRATIK.
+Made with ❤ by [PRATIK](https://github.com/pratikstemkar).
