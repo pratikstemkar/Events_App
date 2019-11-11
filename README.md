@@ -1,4 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![forthebadge made-with-flutter](http://ForTheBadge.com/images/badges/made-with-flutter.svg)](https://www.flutter.dev/)
 
 # Events App :iphone:
 Flutter App to manage events.
