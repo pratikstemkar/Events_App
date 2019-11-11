@@ -6,6 +6,32 @@ class DateWidget extends StatefulWidget {
 }
 
 class _DateWidgetState extends State<DateWidget> {
+  String getDate(int day) {
+    switch (day) {
+      case 1:
+        return 'Monday';
+        break;
+      case 2:
+        return 'Tuesday';
+        break;
+      case 3:
+        return 'Wednesday';
+        break;
+      case 4:
+        return 'Thursday';
+        break;
+      case 5:
+        return 'Friday';
+        break;
+      case 6:
+        return 'Saturday';
+        break;
+      case 7:
+        return 'Sunday';
+        break;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,7 +43,7 @@ class _DateWidgetState extends State<DateWidget> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Text(
-              'Wednesday',
+              getDate(DateTime.now().toLocal().weekday.toInt()),
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.w600,
@@ -26,7 +52,7 @@ class _DateWidgetState extends State<DateWidget> {
               ),
             ),
             Text(
-              '14th August, 2019',
+              '23rd November, 2019',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 20.0,
