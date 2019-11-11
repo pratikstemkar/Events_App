@@ -13,7 +13,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         child: IconButton(
           icon: Icon(Icons.account_circle),
           iconSize: 20.0,
-          color: Colors.white,
+          color: Colors.black,
           onPressed: () {},
         ),
       ),

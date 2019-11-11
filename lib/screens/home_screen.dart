@@ -1,3 +1,4 @@
+import 'package:events_app/screens/profile_screen.dart';
 import 'package:events_app/widgets/date_widget.dart';
 import 'package:events_app/widgets/event_widget.dart';
 import 'package:flutter/material.dart';
@@ -9,6 +10,14 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _currentTab = 0;
+
+  void goPage(int value) {
+    switch (value) {
+      case 2:
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => ProfileScreen()));
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -96,18 +105,19 @@ class _HomeScreenState extends State<HomeScreen> {
           setState(() {
             _currentTab = value;
           });
+          goPage(value);
         },
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.access_alarm),
+            icon: Icon(Icons.home),
             title: SizedBox.shrink(),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.account_balance),
+            icon: Icon(Icons.event_seat),
             title: SizedBox.shrink(),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.add_alert),
+            icon: Icon(Icons.account_circle),
             title: SizedBox.shrink(),
           ),
         ],

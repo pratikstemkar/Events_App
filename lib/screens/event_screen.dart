@@ -60,13 +60,13 @@ class _EventScreenState extends State<EventScreen> {
                           icon: Icon(Icons.search),
                           iconSize: 30.0,
                           color: Colors.white,
-                          onPressed: () => Navigator.pop(context),
+                          onPressed: () {},
                         ),
                         IconButton(
                           icon: Icon(Icons.collections),
                           iconSize: 30.0,
                           color: Colors.white,
-                          onPressed: () => Navigator.pop(context),
+                          onPressed: () {},
                         ),
                       ],
                     ),
@@ -132,6 +132,34 @@ class _EventScreenState extends State<EventScreen> {
                 color: Colors.black,
                 fontSize: 20.0,
                 letterSpacing: 1.2,
+              ),
+            ),
+          ),
+          Expanded(
+            child: Padding(
+              padding: EdgeInsets.only(
+                bottom: 10.0,
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  Center(
+                    child: FlatButton(
+                      padding: EdgeInsets.all(20.0),
+                      onPressed: () {},
+                      color: Colors.blue,
+                      splashColor: Colors.blueGrey,
+                      child: Text(
+                        'Register',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
