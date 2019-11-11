@@ -1,21 +1,21 @@
-# Events App 🌱
+# Events App :iphone:
 Flutter App to manage events.
 
-## Packages
+## Packages :package:
 * [Intl](https://pub.dev/packages/intl) - For Date Formatting
 
-## Development Progress
+## Development Progress :construction_worker:
 UI development in progress.
 
-## Milestones
+## Milestones :wrench:
 * UI Development - Till 15 November
 * System Design - Till 18 November
 * Backend Development - Till 1 December
 
-## Contributors
+## Contributors :busts_in_silhouette:
 * [PRATIK](https://github.com/pratikstemkar)
 
-## License
+## License :pencil:
 [MIT](https://opensource.org/licenses/MIT)
 
 Made with ❤ by PRATIK.
