@@ -45,7 +45,7 @@ class _EventWidgetState extends State<EventWidget> {
             height: 155.0,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
-              itemCount: 4,
+              itemCount: 7,
               itemBuilder: (BuildContext context, int index) {
                 Event event = events[index];
                 return GestureDetector(
@@ -77,14 +77,13 @@ class _EventWidgetState extends State<EventWidget> {
                         Hero(
                           tag: events[index].imageUrl,
                           child: ClipRRect(
-                            borderRadius: BorderRadius.circular(10.0),
-                            child: Image(
-                              height: 150.0,
-                              width: 150.0,
-                              image: AssetImage(events[index].imageUrl),
-                              fit: BoxFit.cover,
-                            ),
-                          ),
+                              borderRadius: BorderRadius.circular(10.0),
+                              child: Image(
+                                image: AssetImage(events[index].imageUrl),
+                                height: 180.0,
+                                width: 180.0,
+                                fit: BoxFit.cover,
+                              )),
                         ),
                         Positioned(
                           left: 10.0,
