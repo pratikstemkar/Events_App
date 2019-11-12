@@ -14,7 +14,7 @@ UI development in progress.
 * System Design - Till 18 November
 * Backend Development - Till 1 December
 
-## How to Contribute? :construction_worker:
+## How to Contribute? :seedling:
 ```
 1. Fork the repository.
 2. Create a new branch.
@@ -25,7 +25,7 @@ UI development in progress.
 ## Contributors :busts_in_silhouette:
 * [PRATIK](https://github.com/pratikstemkar)
 
-## License :pencil2:
+## License :page_facing_up:
 [MIT](https://opensource.org/licenses/MIT)
 
 Made with ❤ by [PRATIK](https://github.com/pratikstemkar).
