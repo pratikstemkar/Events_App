@@ -26,6 +26,6 @@ UI development in progress.
 * [PRATIK](https://github.com/pratikstemkar)
 
 ## License :page_facing_up:
-[MIT](https://opensource.org/licenses/MIT)
+[MIT](https://github.com/pratikstemkar/Events_App/blob/master/LICENSE)
 
 Made with ❤ by [PRATIK](https://github.com/pratikstemkar).
