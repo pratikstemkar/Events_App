@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  [![GitHub release](https://img.shields.io/badge/release-v1.0.0-green)](https://GitHub.com/pratikstemkar/events_app/releases/)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  [![GitHub release](https://img.shields.io/badge/release-v0.0.1-green)](https://GitHub.com/pratikstemkar/events_app/releases/)  
 
 # Events App :iphone:
 Flutter App to manage events.
@@ -14,10 +14,18 @@ UI development in progress.
 * System Design - Till 18 November
 * Backend Development - Till 1 December
 
+## How to Contribute? :construction_worker:
+```
+1. Fork the repository.
+2. Create a new branch.
+3. Add features in the new branch.
+4. Make a pull request for new branch.
+```
+
 ## Contributors :busts_in_silhouette:
 * [PRATIK](https://github.com/pratikstemkar)
 
-## License :pencil:
+## License :pencil2:
 [MIT](https://opensource.org/licenses/MIT)
 
 Made with ❤ by [PRATIK](https://github.com/pratikstemkar).
