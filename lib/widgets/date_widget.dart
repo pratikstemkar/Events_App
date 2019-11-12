@@ -52,7 +52,7 @@ class _DateWidgetState extends State<DateWidget> {
               ),
             ),
             Text(
-              '23rd November, 2019',
+              DateTime.now().toString(),
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 20.0,

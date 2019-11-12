@@ -40,9 +40,18 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ],
             ),
             Container(
-              height: 400.0,
+              //height: 400.0,
               // color: Colors.lightBlue,
               child: DetailsWidget(),
+            ),
+            SizedBox(
+              height: 40.0,
+            ),
+            Text(
+              'Events from Protex Creative',
+              style: TextStyle(
+                color: Colors.black38,
+              ),
             ),
           ],
         ),
