@@ -49,12 +49,12 @@ class _HomeScreenState extends State<HomeScreen>
         ),
         centerTitle: true,
         elevation: 0.0,
-        leading: IconButton(
-          icon: Icon(Icons.menu),
-          iconSize: 25.0,
-          color: Colors.white,
-          onPressed: () {},
-        ),
+        // leading: IconButton(
+        //   icon: Icon(Icons.menu),
+        //   iconSize: 25.0,
+        //   color: Colors.white,
+        //   onPressed: () {},
+        // ),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.search),
@@ -66,6 +66,7 @@ class _HomeScreenState extends State<HomeScreen>
         ],
       ),
       body: TabBarView(
+        physics: NeverScrollableScrollPhysics(),
         controller: _tabController,
         children: _screenList,
       ),
