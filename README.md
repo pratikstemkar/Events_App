@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  [![GitHub release](https://img.shields.io/badge/release-v0.0.1-green)](https://GitHub.com/pratikstemkar/events_app/releases/)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  [![GitHub release](https://img.shields.io/badge/release-v0.0.1-green)](https://GitHub.com/pratikstemkar/events_app/releases/) [![Build Status](https://travis-ci.org/pratikstemkar/Events_App.svg?branch=master)](https://travis-ci.org/pratikstemkar/Events_App) 
 
 # Events App :iphone:
 Flutter App to manage events.
