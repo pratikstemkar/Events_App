@@ -19,30 +19,26 @@ class Attend {
 List<Attend> attends = [
   Attend(
       name: 'Event 1',
-      date: DateTime.parse('12-01-2019'),
       imageUrl: 'assets/images/1.jpg',
       city: 'Pune',
       country: 'India',
       description: 'This is a good event.'),
   Attend(
       name: 'Event 3',
-      date: DateTime.parse('12-01-2019'),
       imageUrl: 'assets/images/3.jpg',
-      city: 'Pune',
+      city: 'Bangalore',
       country: 'India',
       description: 'This is a good event.'),
   Attend(
       name: 'Event 5',
-      date: DateTime.parse('12-01-2019'),
       imageUrl: 'assets/images/5.jpg',
-      city: 'Pune',
+      city: 'Delhi',
       country: 'India',
       description: 'This is a good event.'),
   Attend(
       name: 'Event 6',
-      date: DateTime.parse('12-01-2019'),
       imageUrl: 'assets/images/6.jpg',
-      city: 'Pune',
+      city: 'Chennai',
       country: 'India',
       description: 'This is a good event.'),
 ];
