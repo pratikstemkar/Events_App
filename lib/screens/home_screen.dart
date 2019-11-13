@@ -10,6 +10,47 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen>
     with SingleTickerProviderStateMixin {
+  final TextEditingController _filter = new TextEditingController();
+  Icon _searchIcon = Icon(Icons.search);
+  Widget _appBarTitle = Text(
+    'DSC Events',
+    style: TextStyle(
+      color: Colors.white,
+      fontSize: 20.0,
+      fontWeight: FontWeight.bold,
+    ),
+  );
+
+  void _searchPressed() {
+    setState(() {
+      if (this._searchIcon.icon == Icons.search) {
+        this._searchIcon = Icon(Icons.close);
+        this._appBarTitle = TextField(
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 18.0,
+          ),
+          controller: _filter,
+          decoration: InputDecoration(
+            border: InputBorder.none,
+            prefixIcon: Icon(
+              Icons.search,
+              color: Colors.white,
+            ),
+            hintText: 'Search...',
+            hintStyle: TextStyle(
+              color: Colors.white,
+            ),
+          ),
+        );
+      } else {
+        this._searchIcon = Icon(Icons.search);
+        this._appBarTitle = Text('DSC Event');
+        _filter.clear();
+      }
+    });
+  }
+
   int _currentTab = 0;
 
   List<Widget> _screenList = [
@@ -39,29 +80,15 @@ class _HomeScreenState extends State<HomeScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'DSC Events',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
+        title: _appBarTitle,
         centerTitle: true,
         elevation: 0.0,
-        // leading: IconButton(
-        //   icon: Icon(Icons.menu),
-        //   iconSize: 25.0,
-        //   color: Colors.white,
-        //   onPressed: () {},
-        // ),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.search),
+            icon: _searchIcon,
             iconSize: 25.0,
             color: Colors.white,
-            onPressed: () {},
-            tooltip: 'Search',
+            onPressed: _searchPressed,
           )
         ],
       ),
