@@ -23,9 +23,9 @@ UI development in progress.
 ```
 
 ## Contributors :busts_in_silhouette:
-* [PRATIK](https://github.com/pratikstemkar)
+* [PRATIK](https://pratikstemkar.me)
 
 ## License :page_facing_up:
 [MIT](https://github.com/pratikstemkar/Events_App/blob/master/LICENSE)
 
-Made with ❤ by [PRATIK](https://github.com/pratikstemkar).
+Made with ❤ by [PRATIK](https://pratikstemkar.me).
