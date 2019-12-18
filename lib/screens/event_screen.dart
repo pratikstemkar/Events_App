@@ -1,4 +1,5 @@
 import 'package:events_app/models/event_model.dart';
+import 'package:events_app/screens/registerevent_screen.dart';
 import 'package:flutter/material.dart';
 
 class EventScreen extends StatefulWidget {
@@ -146,7 +147,10 @@ class _EventScreenState extends State<EventScreen> {
                   Center(
                     child: FlatButton(
                       padding: EdgeInsets.all(20.0),
-                      onPressed: () {},
+                      onPressed: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (_) => RegisterEventScreen())),
                       color: Colors.blue,
                       splashColor: Colors.blueGrey,
                       child: Text(

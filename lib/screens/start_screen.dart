@@ -1,6 +1,7 @@
 import 'package:events_app/widgets/date_widget.dart';
 import 'package:events_app/widgets/event_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class StartScreen extends StatefulWidget {
   @override
@@ -51,6 +52,12 @@ class _StartScreenState extends State<StartScreen> {
                           height: 20.0,
                         ),
                         EventWidget(),
+                        SizedBox.fromSize(
+                          child: SvgPicture.asset(
+                            'assets/svg_img/waiting_tree.svg',
+                          ),
+                          size: Size(200.0, 200.0),
+                        ),
                       ],
                     ),
                   ),

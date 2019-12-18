@@ -1,6 +1,7 @@
 import 'package:events_app/widgets/details_widget.dart';
 import 'package:events_app/widgets/profileimg_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class ProfileScreen extends StatefulWidget {
   @override
@@ -40,18 +41,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ],
             ),
             Container(
-              //height: 400.0,
-              // color: Colors.lightBlue,
               child: DetailsWidget(),
             ),
             SizedBox(
-              height: 40.0,
+              height: 10.0,
             ),
-            Text(
-              'Events from Protex Creative',
-              style: TextStyle(
-                color: Colors.black38,
-              ),
+            SizedBox.fromSize(
+              child: SvgPicture.asset('assets/svg_img/profile_girl.svg'),
+              size: Size(150.0, 150.0),
             ),
           ],
         ),
