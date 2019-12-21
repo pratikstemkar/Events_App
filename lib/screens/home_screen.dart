@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: _appBarTitle,
+        title: Text('Events'),
         centerTitle: true,
         elevation: 0.0,
       ),

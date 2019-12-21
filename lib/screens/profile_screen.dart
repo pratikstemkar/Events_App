@@ -18,14 +18,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
             Container(
               alignment: Alignment.center,
               height: 200.0,
-              //color: Colors.red,
+              // color: Theme.of(context).primaryColor,
               child: ProfileImgWidget(),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  'Jennifer Aniston',
+                  'Jennifer',
                   style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.bold,
